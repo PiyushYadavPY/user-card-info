@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Enter User Information</h1>
+    <form id="userForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required /><br /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required /><br /><br />
+
+      <label for="village">Village:</label>
+      <input type="text" id="village" required /><br /><br />
+
+      <label for="city">City:</label>
+      <input type="text" id="city" required /><br /><br />
+
+      <input type="submit" value="Save" />
+
+      <label for="color">Choose Card Color:</label>
+      <input type="color" id="color" value="#007BFF"/><br/><br />
+    </form>
+
+    <div id="userInfo">
+      <h2>User Information Card</h2>
+      <p>Name: <span id="displayedName"></span></p>
+      <p>Phone Number: <span id="displayedPhone"></span></p>
+      <p>Village: <span id="displayedVillage"></span></p>
+      <p>City: <span id="displayedCity"></span></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
